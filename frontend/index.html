@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAP Ticket Manager</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>SAP Ticket Manager</h1>
+
+        <div class="card">
+
+            <h2>Crear Ticket</h2>
+
+            <form id="ticketForm">
+
+                <input
+                    type="text"
+                    id="titulo"
+                    placeholder="Título del ticket"
+                    required
+                >
+
+                <textarea
+                    id="descripcion"
+                    placeholder="Descripción"
+                    required
+                ></textarea>
+
+                <select id="estado">
+                    <option value="Abierto">Abierto</option>
+                    <option value="En proceso">En proceso</option>
+                    <option value="Cerrado">Cerrado</option>
+                </select>
+
+                <button type="submit">
+                    Crear Ticket
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Lista de Tickets</h2>
+
+            <input
+                type="text"
+                id="buscarTicket"
+                placeholder="Buscar ticket..."
+            >
+
+            <div class="table-responsive">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Descripción</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tablaTickets">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
