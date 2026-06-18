@@ -54,3 +54,20 @@ SAP-Ticket-Manager/
     │   └── style.css
     └── js/
         └── app.js
+## Autor
+
+Marco Martínez
+
+## Instalación
+
+1. Clonar el repositorio
+
+git clone https://github.com/marcomartinezzapata4-wq/SAP-Ticket-Manager.git
+
+2. Instalar dependencias
+
+pip install -r backend/requirements.txt
+
+3. Ejecutar el servidor
+
+uvicorn app.main:app --reload
